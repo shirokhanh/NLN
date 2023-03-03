@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background: #f2f2f2;
+}
+nav{
+	background:gray;
+	
+	
+}
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+nav .logo img{
+	float: left;
+	width: 150px;
+	height: 150px;
+	
+	
+}
+nav .logo{
+	padding: 10px 200px;
+	
+}
+nav ul{
+	float: right;
+	list-style: none;
+	margin-right: 180px;
+	position: relative;
+	text-transform: uppercase;
+	padding: 50px 0px;
+	justify-content: center;
+	align-items: center;
+}
+nav ul li{
+	float: left;
+	display: inline-block;
+	margin: 0 15px;
+	background: gray;
+}
+nav ul li a{
+	color: whitesmoke;
+	text-decoration: none;
+	line-height: 5px;
+	font-size: 16px;
+	padding: 3px 15px;
+}
+nav ul li a:hover{
+
+	border-radius: 10px;
+	transition: .8s;
+}
+nav ul ul{
+	position: absolute;
+	opacity: 1;
+	visibility: hidden;
+	transition: top .8s;
+	margin-left: 0px;
+	text-transform: none;
+}
+nav ul ul ul{
+	border:none;
+}
+nav ul li:hover>ul{
+	top:70px;
+	opacity: .9;
+	visibility: visible;
+}
+nav ul ul li{
+	position: relative;
+	margin:0px;
+	width:150px;
+	float: none;
+	display: list-item;
+	border-bottom: 2px solid burlywood;
+}
+nav ul ul li a{
+	line-height: 40px;
+}
+nav ul ul li a:hover{
+	
+	background: linear-gradient(to right, #0066ff 0%, #66ffff 50%);
+}
+nav ul ul ul li{
+	position: relative;
+	top:-20px;
+	left: 200px;
+}
+body{
+	background-color: wheat;
+}
+ .container{
+    width: 80vmin;
+    position: relative; 	
+    transform: translate(-50%,-50%);
+    top: 230px;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite alternate-reverse;
+}
+ .wrapper img{
+	width: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 50%;
+}
+
+.headline{
+	text-align: center;
+	margin: 40px 0px;
+}
+main h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	padding: 50px 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #555;
+	font-weight: 600;
+}
+.product{
+	max-width: 1300px;
+	margin: 0 auto;
+	
+}
+main{
+	background-color: wheat;
+}
+main ul.product {
+	display: flex;
+	flex-wrap:wrap ;
+	justify-content: space-between;
+	list-style: none;
+	
+	
+}
+main ul.product li{
+		flex-basis: 25%;
+		box-sizing: border-box;
+		padding-left:15px ;
+		padding-right:15px ;
+		margin-bottom: 30px;
+		border: 1px solid whitesmoke;
+	}
+main ul.product li img{
+	max-width: 100%;
+	height: 300px;
+	width: 300px;
+}
+
+main ul.product li .product_top{
+	position: relative;
+	overflow: hidden;
+}
+main ul.product li:hover .product_top a.buy_now{
+	bottom: 0px;
+}
+
+main ul.product li .product_top .product_thumb img{
+	display: block;
+	filter: opacity(80%);
+}
+main ul.product li .product_top a.buy_now{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: #446084;
+	color: #fff;
+	padding: 10px 0px;
+	position: absolute;
+	width: 100%;
+	bottom: -39px;
+	transition: 0.27s ease-in-out;
+}
+main ul.product li .product_info {
+	padding: 20px 0px;
+
+}
+main ul.product li .product_info a{
+	display: block;
+	text-decoration: none;
+}
+main ul.product li .product_info a.product_cat{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #9e9e9e;
+	padding:3px 0px ;
+}
+main ul.product li .product_info a.product_name{
+	color: #334862;
+	padding:3px 0px ;
+}
+main ul.product li .product_info a.product_price{
+	color: #111;
+	padding: 2px 0px;
+	font-weight: 600;
+
+}
+footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 20px 20px;
+    text-align: center;
+  }
